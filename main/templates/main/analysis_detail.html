@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado OSINT - {{ analysis.domain }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        pre { background-color: #f2f2f2; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Análisis de: {{ analysis.domain }}</h1>
+    <h3>Puertos:</h3>
+    <pre>{{ analysis.ports }}</pre>
+
+    <h3>WHOIS:</h3>
+    <pre>{{ analysis.whois }}</pre>
+
+    <h3>DNS:</h3>
+    <pre>{{ analysis.dns|safe }}</pre>
+
+    <h3>Dorks:</h3>
+    <pre>{{ analysis.dorks|safe }}</pre>
+
+    <h3>OSINT Pasivo:</h3>
+    <pre>{{ analysis.passive_osint|safe }}</pre>
+
+    <h3>Análisis IA:</h3>
+    <pre>{{ analysis.analysis_summary|safe }}</pre>
+</body>
+</html>

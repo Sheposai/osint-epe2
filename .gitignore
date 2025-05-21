@@ -1,0 +1,17 @@
+# Entorno virtual
+venv/
+
+# Archivos Python compilados
+__pycache__/
+*.pyc
+
+# Archivos de base de datos
+*.sqlite3
+
+# Variables de entorno
+.env
+
+# Archivos de prueba o temporales
+test_env.py
+*.log
+*.pptx
